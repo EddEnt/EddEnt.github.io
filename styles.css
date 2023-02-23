@@ -1,0 +1,204 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    background-color: whitesmoke;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show{
+    display: block;
+}
+
+li{
+    /*width: 200px; */
+    text-decoration: none;
+}
+
+footer{
+    padding: 80px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font-size: 90px;
+    margin: 0px;
+}
+
+h2{
+    font-size: 65px;
+}
+
+p{
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.subtext{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.hero{
+    background-color: #014421;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+.heroArea{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heroText{
+    margin-left: 70px;
+    margin-bottom: 200px;
+}
+.button{
+    width: 188px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #698394;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 6px;
+    margin-top: 20px;
+}
+
+.button:hover{
+    background-color: #a3c8e0;
+}
+.button:active{
+    background-color: #698394;
+}
+
+.socials{
+    padding-bottom: 190px;
+}
+.social{
+    margin: 13px;
+}
+
+.logo{
+    height: 80px;
+    margin: 30px;
+}
+
+.sub_section{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub_section_alternative{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot{
+    width: 300px;
+    border-radius: 150px;
+}
+
+.headshotContainer{
+    display: flex;
+    align-items: center;
+}
+
+.projectContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 1000px) {
+    .projectContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.projectCard{
+    width: 300px;
+    height: 500px;
+    box-shadow: 5px 5px 20px rgb(197 195, 195);
+    margin: 10px;
+}
+
+.projectImage{
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+
+.projectLink{
+    text-decoration: none;
+    color: #698394;
+}
+
+.hamburger{
+    display: none;
+}
+
+.hamburger:focus{
+    outline: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .hamburger{
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul{
+        display: none;
+        background-color: #014421;
+        margin: 0px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: aliceblue;
+    }
+    .logo{
+        display: none;
+    }
+}
