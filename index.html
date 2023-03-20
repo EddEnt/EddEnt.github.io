@@ -13,9 +13,9 @@
 
     <section class="hero">
         <nav>
-            <img class="logo" src="images/ai.png" alt="Edward Entecott's logo" />
+            <img class="logo" src="images/logoEE.PNG" alt="Edward Entecott's logo" />
             <ul class="navList">
-                <li><a href="#aboutMe">About Me</a></li>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -23,6 +23,8 @@
                 <i class = "fa-solid fa-bars"></i>
             </button>
         </nav>
+
+        <button onclick="topFunction()" id="topBTN" title="Go to top of page"><b>^</b></button>
 
         <div class="heroArea">
             <div class="heroText">
@@ -36,13 +38,28 @@
             </div>
         </div>
         </section>
-    <section class="sub_section" id="aboutMe">
+    <section class="sub_section" id="about">
         <div class="info">
             <h2>About Me</h2>
-            <p>Hi there! My name is Edward Entecott. I am a recent graduate from George Brown College, looking to start my career in Software Development. </p>
+            <p id="quote">“We all need people who will give us feedback. <br>&nbsp That's how we improve.” &nbsp Bill Gates</p>
+
+            <br>
+            <br>
+            <br>
+            <p>Hi there! My name is Edward Entecott and I am a recent graduate from George Brown College. I'm looking to start my career in Software Development. Going through the Computer Programming and Analyst 
+                program of George Brown College, we were taught all aspects of software development, from frontend templating & design, to backend engineering and Datastructures, to the Agile work methodology.
+            <br>
+            <br>
+               I am proficent in HTML & CSS, Java, C#, Python, JavaScript and its many frameworks, including React and Angular.  </p>
         </div>
         <div class="headshotContainer">
-            <img class="headshot" src="images/headshot.jpg" alt="Edward Entecott's headshot" />
+            <img class="headshot" src="images/headshot.PNG" alt="Edward Entecott's headshot" />
+        </div>
+    </section>
+
+    <section class="sub_section_resume">
+        <div class="resume_display">
+            <iframe class="doc" src="https://docs.google.com/document/d/1r55smoMPi27mTHp_8rW1x_kezhlMLY4NV9cehKKki_A/edit"></iframe>
         </div>
     </section>
 
@@ -51,34 +68,35 @@
         <div class="projectContainer">
 
             <div class="projectCard">
-                <img class="projectImage" src="" alt="Project One Image" />
-                <h3>Project One</h3>
-                <p class="subtext">This is my project and this is my code</p>
+                <img class="projectImage" src="images/capstone.PNG" alt="Project One Image" />
+                <h3>Capstone</h3>
+                <p class="subtext">My Capstone project. In a team of 4, I & 3 others built a web application for managing employee time managment and scheduling. </p>
                 <hr />
-                <p class="subtext"><a class="projectLink" href="https://github.com/EddEnt" >View Here</a></p>
+                <p class="subtextClick"><a class="projectLink" href="https://github.com/EddEnt/Capstone" >View Here</a></p>
             </div>
 
             <div class="projectCard">
-                <img class="projectImage" src="" alt="Project Two Image" />
-                <h3>Project Two</h3>
-                <p class="subtext">This is my project and this is my code</p>
+                <img class="projectImage" src="images/chessClub.PNG" alt="Project Two Image" />
+                <h3>Chess Club</h3>
+                <p class="subtext">Chess club managment software. Backend was coded in Java, with a frontend design from JavaFX. </p>
                 <hr />
-                <p class="subtext"><a class="projectLink" href="https://github.com/EddEnt" >View Here</a></p>
+                <p class="subtextClick"><a class="projectLink" href="https://github.com/EddEnt/Java-Chess-Club" >View Here</a></p>
             </div>
 
             <div class="projectCard">
-                <img class="projectImage" src="" alt="Project Three Image" />
-                <h3>Project Three</h3>
-                <p class="subtext">This is my project and this is my code</p>
+                <img class="projectImage" src="images/addEmployee.PNG" alt="Project Three Image" />
+                <h3>Employee Managment</h3>
+                <p class="subtext">Employee managment webpage. Backend makes use of GraphQL, with an Angular frontend.</p>
                 <hr />
-                <p class="subtext"><a class="projectLink" href="https://github.com/EddEnt" >View Here</a></p>
+                <p class="subtextClick"><a class="projectLink" href="https://github.com/EddEnt/101190443_comp_3133_assig2" >View Here</a></p>
 
             </div>
         </div>
     </section>
     <footer id="contact">
         <h2>Contact Me</h2>
-        <p></p>
+        <p>edward.entecott@georgebrown.ca</p>
+        <p>EEntecott.business@gmail.com</p>
     </footer>
     <script src="app.js"></script>
 

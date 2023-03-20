@@ -1,9 +1,15 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
+        
 }
 
 section{
-    background-image: linear-gradient(#263a30, #34473e);
+    background-image: linear-gradient(#0c3520, #173d2c);
+    color: white;
 }
 
 
@@ -33,7 +39,7 @@ li{
 footer{
     padding: 80px;
     background-color: blue;
-    background-image: linear-gradient(#303b35, #203328);
+    background-image: linear-gradient(#193024, #1f2c24);
     color: white;
     text-align: center;
 }
@@ -63,6 +69,12 @@ a{
     font-weight: 300;
 }
 
+.subtextClick{
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
 hr{
     margin-left: 20px;
     margin-right: 20px;
@@ -70,7 +82,7 @@ hr{
 
 .hero{
     background-color: #263a30;
-    background-image: linear-gradient(#054224, #263a30);
+    background-image: linear-gradient(#054224, #0c3520);
     height: 100vh;
     color: white;
     font-size: 40px;
@@ -124,6 +136,13 @@ hr{
     padding: 80px;
 }
 
+.sub_section_resume{
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+    background-image: linear-gradient(#173d2c, #153122);
+}
+
 .sub_section_alternative{
     display: flex;
     flex-direction: column;
@@ -153,8 +172,12 @@ hr{
     }
 }
 
+#quote{
+    font-size: 50px;
+}
+
 #projects{
-    background-image: linear-gradient(#34473e, #303b35);
+    background-image: linear-gradient(#153122, #193023);
 }
 
 .projectCard{
@@ -162,7 +185,9 @@ hr{
     height: 500px;
     box-shadow: 5px 5px 20px rgb(197 195, 195);
     margin: 10px;
-    background-color: #cfcfcf;
+    background-color: #e6e6e6;
+    color: black;
+    border-radius: 5px;
 }
 
 .projectImage{
@@ -173,7 +198,13 @@ hr{
 
 .projectLink{
     text-decoration: none;
-    color: #ffffff;
+    color: black;
+}
+
+.doc {
+    align-items: center;
+    width: 300%;
+    height: 1000px;
 }
 
 .hamburger{
@@ -182,6 +213,38 @@ hr{
 
 .hamburger:focus{
     outline: 0;
+}
+
+#topBTN {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #68601a; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px;
+    font-size: 20px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  
+  #topBTN:hover {
+    background-color: #555;
+  }
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
